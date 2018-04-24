@@ -109,6 +109,70 @@ p{
 	width:30px;
 	position: absolute;
 	top:272px;
+	left: 1250px;
+	
+}
+#star4{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 230px;
+	
+}
+#star5{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 570px;
+	
+}
+#star6{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 900px;
+	
+}
+#star7{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 1230px;
+	
+}
+#star8{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 230px;
+	
+}
+#star9{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 570px;
+	
+}
+#star10{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 920px;
+	
+}
+#star11{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
 	left: 1230px;
 	
 }
