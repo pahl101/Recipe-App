@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="logReg.css">
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://surveyjs.azureedge.net/1.0.19/survey.jquery.js"></script>
+    <link href="https://surveyjs.azureedge.net/1.0.19/survey.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
+    <script src="https://unpkg.com/surveyjs-widgets"></script>
+
+</head>
+<body>
+
+	 <div id="surveyElement"></div>
+     <div id="surveyResult"></div>
+
+	<script>
+		var json = {
+		 completedHtml: "<h3>Thank you for submitting your information.</h3>",
+		 pages: [
+		  {
+		   name: "page1",
+		   elements: [
+		     
+		    {
+		     type: "radiogroup",
+		     name: "one",
+		     title: "Do you have any food allergies",
+		     choices: [
+		      "Yes",
+		      "No"
+		     ]
+		    },
+		    {
+		     type: "checkbox",
+		     name: "question3",
+		     "colCount": 3,
+		     visibleIf: "{one} = \"Yes\"",
+		     title: "Select for food allergies",
+		     choices: [
+		      {
+		       value: "item1",
+		       text: "Wheat"
+		      },
+		      {
+		       value: "item2",
+		       text: "Eggs"
+		      },
+		      {
+		       value: "item3",
+		       text: "Soybean"
+		      },
+		      {
+		       value: "item4",
+		       text: "Peanut"
+		      },
+		      {
+		       value: "item5",
+		       text: "Milk"
+		      },
+		      {
+		       value: "item6",
+		       text: "Fish"
+		      },
+		      {
+		       value: "item7",
+		       text: "Shell Fish"
+		      },
+		      {
+		       value: "item8",
+		       text: "Tree Nut"
+		      }
+		     ]
+		    },
+		    {
+		     type: "radiogroup",
+		     name: "question4",
+		     "colCount": 3,
+		     title: "I am:",
+		     choices: [
+		      {
+		       value: "item1",
+		       text: "Vegan"
+		      },
+		      {
+		       value: "item2",
+		       text: "Vegetarian"
+		      },
+		      {
+		       value: "item3",
+		       text: "Pescatarian"
+		      },
+		      {
+		       value: "item4",
+		       text: "Gluten Fee"
+		      },
+		      {
+		       value: "item5",
+		       text: "Dairy Free"
+		      }
+		     ]
+		    }
+		   ],
+		   title: "Welcome to Recipe App,\nTell Us About Your Preferences!"
+		  },
+		  {
+		   name: "page2",
+		   elements: [
+		    {
+		     type: "checkbox",
+		     name: "question1",
+		     "colCount": 3,
+		     choices: [
+		      {
+		       value: "item1",
+		       text: "Breakfast"
+		      },
+		      {
+		       value: "item2",
+		       text: "Lunch"
+		      },
+		      {
+		       value: "item3",
+		       text: "Dinner"
+		      },
+		      {
+		       value: "item4",
+		       text: "Beverages"
+		      },
+		      {
+		       value: "item5",
+		       text: "American"
+		      },
+		      {
+		       value: "item6",
+		       text: "British"
+		      },
+		      {
+		       value: "item7",
+		       text: "Cajun"
+		      },
+		      {
+		       value: "item8",
+		       text: "Caribbean"
+		      },
+		      {
+		       value: "item9",
+		       text: "Chinese"
+		      },
+		      {
+		       value: "item10",
+		       text: "Filipino"
+		      },
+		      {
+		       value: "item11",
+		       text: "French"
+		      },
+		      {
+		       value: "item12",
+		       text: "Greek"
+		      },
+		      {
+		       value: "item13",
+		       text: "Indian"
+		      },
+		      {
+		       value: "item14",
+		       text: "Japanese"
+		      },
+		      {
+		       value: "item15",
+		       text: "Jewish"
+		      },
+		      {
+		       value: "item16",
+		       text: "Mediterranean"
+		      },
+		      {
+		       value: "item17",
+		       text: "Mexican"
+		      },
+		      {
+		       value: "item18",
+		       text: "Morrocan"
+		      },
+		      {
+		       value: "item19",
+		       text: "Pakistani"
+		      },
+		      {
+		       value: "item20",
+		       text: "Russian"
+		      },
+		      {
+		       value: "item21",
+		       text: "Seafood"
+		      },
+		      {
+		       value: "item22",
+		       text: "Spanish"
+		      },
+		      {
+		       value: "item23",
+		       text: "Thai"
+		      },
+		      {
+		       value: "item24",
+		       text: "Turkish"
+		      },
+		      {
+		       value: "item25",
+		       text: "Vietnamese"
+		      }
+		     ]
+		    }
+		   ],
+		   title: "Select Your Favorite Types of Food"
+		  }
+		 ],
+		 showProgressBar: "bottom"
+		};
+
+		window.survey = new Survey.Model(json);
+
+		survey
+		    .onComplete
+		    .add(function (result) {
+		        document
+		            .querySelector('#surveyResult')
+		            .innerHTML = "result: " + JSON.stringify(result.data);
+		    });
+
+		$("#surveyElement").Survey({model: survey});
+
+
+	</script>
+
+
+
+</body>
+</html>
