@@ -2,106 +2,10 @@
 <html>
 <head>
 	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="homeFav.css">
+
 <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-    top: -4px;
-   
-}
 
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 26px;
-    text-decoration: none;
-    font-family: "Courier New", Courier, monospace;
-}
-
-li a:hover {
-    background-color: #111;
-}
-#search{
-	width: 20px;
-	height: 15px;
-}
-#left{	
-left:0px;
-top:56px;
-position:fixed;
-height:600px;
-width: 600px;
-opacity: 0.05;
-}
-
-#mid{	
-left:600px;
-top:56px;
-position:fixed;
-height:600px;
-width: 600px;
-opacity: 0.05;
-}
-#right{	
-left:1200px;
-top:56px;
-position:fixed;
-height:600px;
-width: 600px;
-opacity: 0.05;
-}
-#rat{
-	height: 200px;
-	width: 200px;
-
-}
-
-
-#lable{
-	position: absolute;
-	left: 75px;
-	top:250px; 
-}
-#lable1{
-	position: absolute;
-	left: 395px;
-	top:250px; 
-}
-#lable2{
-	position: absolute;
-	left: 720px;
-	top:250px; 
-}
-#lable3{
-	position: absolute;
-	left: 1055px;
-	top:250px; 
-}
-/*#side1{
-	background-color:  #333;
-	height: 100%;
-	width:15px;
-	position:fixed;
-	top:4px;
-	left:-2px;
-}
-#side2{
-	background-color:  #333;
-	height: 100%;
-	width:15px;
-	position:fixed;
-	top:4px;
-	left:1266px;
-}*/
 
 </style>
 </head>
@@ -116,29 +20,45 @@ opacity: 0.05;
 	<li><a href="">Home</a></li>
 </ul>
 
-<!-- <div id="side1"></div>
-<div id="side2"></div> -->
+<table id="recipeTable">
 
-<table  style="width:100%">
-	
 
 <tr>
-    <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille</br> </td>
-     <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille</br> </td>
-      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille</br> </td>
-       <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille</br> </td>
+    <td  align="center" valign="center"><img id="rat" src="ratatouille.jpg" onclick="toRatatouille()"> <br><p>Ratatouille</p> </td>
+     <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> <br><p>Ratatouille</p> </td>
+      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> <br><p>Ratatouille</p> </td>
+       <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> <br><p>Ratatouille</p></td>
 
   </tr>
   <tr>
-      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille </td>
-     <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille </td>
-      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille </td>
-       <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br>Ratatouille </td>
+      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p> <br></td>
+     <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p><br> </td>
+      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p><br> </td>
+       <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p> <br></td>
+
+  </tr>
+  <tr>
+      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p> <br></td>
+     <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p><br> </td>
+      <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p><br> </td>
+       <td align="center" valign="center"><img id="rat" src="ratatouille.jpg"> </br><p>Ratatouille</p> <br></td>
 
   </tr>
 
 
 </table>
+
+
+<script type="text/javascript">
+	
+function toRatatouille(){
+	location.href="recipe.html";
+}
+
+
+
+
+</script>
 
 
 
