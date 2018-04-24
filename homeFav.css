@@ -1,0 +1,129 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    top: -4px;  
+    opacity: 1;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#search{
+	width: 20px;
+	height: 15px;
+}
+
+#left{	
+left:0px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+
+#mid{	
+left:600px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+
+#right{	
+left:1200px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+
+#rat{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 50px;
+}
+
+#rat1{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 370px;
+}
+
+#rat2{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	left: 700px;
+}
+
+#rat3{
+	height: 200px;
+	width: 200px;
+	position: absolute;
+		left: 1030px;
+}
+
+#lable{
+	position: absolute;
+	left: 75px;
+	top:250px; 
+}
+
+#lable1{
+	position: absolute;
+	left: 395px;
+	top:250px; 
+}
+
+#lable2{
+	position: absolute;
+	left: 720px;
+	top:250px; 
+}
+
+#lable3{
+	position: absolute;
+	left: 1055px;
+	top:250px; 
+}
+
+/*#side1{
+	background-color:  #333;
+	height: 100%;
+	width:15px;
+	position:fixed;
+	top:4px;
+	left:-2px;
+}
+#side2{
+	background-color:  #333;
+	height: 100%;
+	width:15px;
+	position:fixed;
+	top:4px;
+	left:1266px;
+}*/

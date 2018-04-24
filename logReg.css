@@ -1,0 +1,221 @@
+#leftborder{
+	height: 900px;
+	width: 150px;
+	background-color: blue;
+	position: fixed;
+	top:-20px;
+	left:-95px;
+	transform: rotate(12deg);
+}
+
+#rightborder{
+	height: 900px;
+	width: 200px;
+	background-color: blue;
+	position: fixed;
+	left:1260px;
+	top:-20px;
+	transform: rotate(12deg);
+}
+
+#topborder{
+	height: 300px;
+	width: 2000px;
+	background-color: green;
+	position: fixed;
+	left:-20px;
+	top:-190px;
+	transform: rotate(7deg);
+}
+
+#bottomborder{
+	height: 300px;
+	width: 2000px;
+	background-color: green;
+	position: fixed;
+	left:-50px;
+	top:620px;
+	transform: rotate(7deg);
+}
+
+#register{	
+	position: fixed;
+	left:518px;
+	top:90px;
+	font-size: 65px;
+}
+
+#login{	
+	position: fixed;
+	left:558px;
+	top:90px;
+	font-size: 65px;
+}
+
+#left{	
+left:50px;
+position:fixed;
+transform: rotate(7deg);
+opacity: 0.25;
+}
+
+#mid{	
+top:70px;	
+left:590px;
+position:fixed;
+transform: rotate(7deg);
+opacity: 0.25;
+}
+
+#right{	
+top:130px;	
+left:1129px;
+position:fixed;
+transform: rotate(7deg);
+opacity: 0.25;
+}
+
+#newUsername{	
+top:210px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#newEmail{	
+top:262px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#newPassword{	
+top:315px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#confirmpassword{	
+top:370px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#username{	
+top:220px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#password{	
+top:290px;	
+left:512px;
+position:fixed;
+height:35px;
+width:300px;
+border-radius: 25px;
+border-color: black;
+text-align: center;
+}
+
+#registerbtn{	
+top:430px;	
+left:612px;
+position:fixed;
+height:45px;
+width:100px;
+border-radius: 25px;
+border-color: black;
+}
+
+#registerbtn:hover{	
+ background-color: #4CAF50; /* Green */
+ color: white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#loginbtn{	
+top:390px;	
+left:612px;
+position:fixed;
+height:45px;
+width:100px;
+border-radius: 25px;
+border-color: black;
+}
+#loginbtn:hover{	
+ background-color: #4CAF50; /* Green */
+ color: white;
+ box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#navicon{
+height:45px;
+width:45px;
+top:10px;
+left:1300px;
+position:absolute;
+}
+
+#navicon1{
+height:45px;
+width:45px;
+top:10px;
+left:1150px;
+position:absolute;
+display:none;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ADD8E6;
+    position: absolute;
+    left:1200px;
+    top:0px;
+    height:662px;
+    border-style: solid;
+     border-width: 5px;
+    border-color: black;  
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    height: 100px;
+}
+
+li a:hover{
+    background-color: #555;
+    color: white;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
