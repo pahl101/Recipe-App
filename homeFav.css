@@ -80,3 +80,35 @@ p{
 	top:60px;
 	left:70px;
 }
+#star{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 230px;
+	
+}
+#star1{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 570px;
+	
+}
+#star2{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 900px;
+	
+}
+#star3{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 1230px;
+	
+}
