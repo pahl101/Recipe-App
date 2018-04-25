@@ -10,13 +10,45 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"/>
     <script src="https://unpkg.com/surveyjs-widgets"></script>
+    <link rel="icon" href="chef.jpg">
 
 </head>
 <body>
 
+	<style type="text/css">
+		h1{
+			font-family: "Segoe UI",Arial,sans-serif;
+			text-align: center;
+			margin-top:-75px;
+		}
+		img{
+			height:150px;
+			width: 150px;
+			margin-left: 300px;
+		}
+		a{
+			color: gray;
+			text-decoration: none;
+			text-align: right;
+			margin-left: 875px;
+		}
+		a:hover{
+			color: darkgray;
+		}
+		#container{
+			width: 50%;
+			height: 75%;
+			margin-left: 25%;
+			margin-top: 1.5%;
+		}
+	</style>
+	<img src="chef.jpg"><h1>Welcome To Recipe App</h1>
+	<a href="home.html">Skip Survey</a>
+	
+	<div id="container">
 	 <div id="surveyElement"></div>
      <div id="surveyResult"></div>
-
+	</div>
 	<script>
 		var json = {
 		 completedHtml: "<h3>Thank you for submitting your information.</h3>",
@@ -104,7 +136,7 @@
 		     ]
 		    }
 		   ],
-		   title: "Welcome to Recipe App,\nTell Us About Your Preferences!"
+		   title: "Tell Us About Your Preferences!"
 		  },
 		  {
 		   name: "page2",
@@ -231,6 +263,7 @@
 		        document
 		            .querySelector('#surveyResult')
 		            .innerHTML = "result: " + JSON.stringify(result.data);
+		            window.location.href = "home.html";
 		    });
 
 		$("#surveyElement").Survey({model: survey});
