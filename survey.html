@@ -14,7 +14,6 @@
 
 </head>
 <body>
-
 	<style type="text/css">
 		h1{
 			font-family: "Segoe UI",Arial,sans-serif;
@@ -26,15 +25,24 @@
 			width: 150px;
 			margin-left: 300px;
 		}
+
+		body{
+			background-image: url("pattern2.png");
+			background-size: 1000px 800px;
+		}
 		a{
-			color: gray;
+			color: black;
 			text-decoration: none;
 			text-align: right;
-			margin-left: 875px;
+			margin-left: 600px;
+			top: 50px;
+			text-overflow: nowrap;
+
 		}
 		a:hover{
 			color: darkgray;
 		}
+
 		#container{
 			width: 50%;
 			height: 75%;
@@ -43,9 +51,10 @@
 		}
 	</style>
 	<img src="chef.jpg"><h1>Welcome To Recipe App</h1>
-	<a href="home.html">Skip Survey</a>
+	
 	
 	<div id="container">
+	 <a href="home.html">Skip Survey</a>
 	 <div id="surveyElement"></div>
      <div id="surveyResult"></div>
 	</div>
