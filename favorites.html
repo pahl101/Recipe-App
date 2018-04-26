@@ -1,38 +1,323 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
-	<link rel="stylesheet" href="homeFav.css">
+	<title>Favorites</title>
+	<link rel="stylesheet" type="text/css" href="favorites.css">
 
+<style>
+
+
+</style>
 </head>
-
 <body>
 	<ul>
-		<li><a class="" href=""><img id="search" src="search.png"></a></li>
-		<li><a class="" href="">Contact Us</a></li>
-		<li><a class="" href="login.html">Logout</a></li>
-		<li><a href="">Profile</a></li>
-		<li><a href="">Favorites</a></li>
-		<li><a href="home.html">Home</a></li>
-	</ul>
+	
+	<li><a class="" href="#home"><img id="search" src="search.png"></a></li>
+	<li><a class="" href="#home">Contact Us</a></li>
+	<li><a class="login.html" href="#home">Logout</a></li>
+	<li><a href="">Profile</a></li>
+	<li><a href="favorites.html">Favorites</a></li>
+	<li><a href="home.html">Home</a></li>
+</ul>
 
-	<!-- <div id="side1"></div>
-	<div id="side2"></div> -->
+<table id="recipeTable">
 
-	<!-- <img id="left" src="pattern1.png">
-	<img id="mid" src="pattern1.png">
-	<img id="right" src="pattern1.png"> -->
-	<img id="rat" src="ratatouille.jpg">
-	<img id="rat1" src="ratatouille.jpg">
-	<img id="rat2" src="ratatouille.jpg">
-	<img id="rat3" src="ratatouille.jpg">
-	<!-- <img id="rat4" src="ratatouille.jpg">
-	 -->
 
-	<h1 id="lable">Ratatouille</h1>
-	<h1 id="lable1">Ratatouille</h1>
-	<h1 id="lable2">Ratatouille</h1>
-	<h1 id="lable3">Ratatouille</h1>
+<tr>
+    <td align="center"><img id="rat1" src="ratatouille.jpg" onclick="toRatatouille()"> <br><p id="test">Ratatouille</p>  </td>
+     <td align="center"><img id="rat2" src="lasagna.jpg" onclick="toLasagna()"> <br><p id="test1">Lasagna</p> </td>
+      <td align="center"><img id="rat3" src="steak.jpg"  onclick="toSteak()"> <br><p id="test2">Filet Mignon</p> </td>
+       <td align="center"><img id="rat4" src="greeksalad.jpg" onclick="toGreekSalad()"> <br><p id="test3">Greek Salad</p></td>
+
+  </tr>
+  <tr>
+      <td align="center"><img id="rat5" src="beefchili.jpg" onclick="toBeefChili()"> </br><p id="test4">Beef Chili</p> <br></td>
+     <td align="center"><img id="rat6" src="shrimptacos.jpg" onclick="toShrimpTacos()"> </br><p id="test5">Shrimp Tacos</p><br> </td>
+      <td align="center"><img id="rat7" src="bbqpizza.jpg" onclick="toBBQpizza()"> </br><p id="test6">BBQ Pizza</p><br> </td>
+       <td align="center"><img id="rat8" src="ramen.jpg" onclick="toRamen()"> </br><p id="test7">Ramen</p> <br></td>
+
+  </tr>
+  <tr>
+      <td align="center"><img id="rat9" src="lambchops.jpg" onclick="toLambChops()"> </br><p id="test8">Lamb Chops</p> <br></td>
+     <td align="center"><img id="rat10" src="salmon.jpg" onclick="toSalmon()"> </br><p id="test9">Salmon</p><br> </td>
+      <td align="center"><img id="rat11" src="roll.jpg" onclick="toRoll()"> </br><p id="test10">California Roll</p><br> </td>
+       <td align="center"><img id="rat12" src="wings.jpg" onclick="toHotWings()"> </br><p id="test11">Hot Wings</p> <br></td>
+
+  </tr>
+
+
+</table>
+
+<!-- <img id="star" src="star.png" onclick="appear()">
+<img id="star1" src="star.png"onclick="appear1()">
+<img id="star2" src="star.png"onclick="appear2()">
+<img id="star3" src="star.png"onclick="appear3()">
+<img id="star4" src="star.png"onclick="appear4()">
+<img id="star5" src="star.png"onclick="appear5()">
+<img id="star6" src="star.png"onclick="appear6()">
+<img id="star7" src="star.png"onclick="appear7()">
+<img id="star8" src="star.png"onclick="appear8()">
+<img id="star9" src="star.png"onclick="appear9()">
+<img id="star10" src="star.png"onclick="appear10()">
+<img id="star11" src="star.png"onclick="appear11()">
+
+
+<img id="ystar" src="yellowstar.png" onclick="appear()" >
+<img id="ystar1" src="yellowstar.png" onclick="appear1()">
+<img id="ystar2" src="yellowstar.png"onclick="appear2()">
+<img id="ystar3" src="yellowstar.png"onclick="appear3()">
+<img id="ystar4" src="yellowstar.png"onclick="appear4()">
+<img id="ystar5" src="yellowstar.png"onclick="appear5()">
+<img id="ystar6" src="yellowstar.png"onclick="appear6()">
+<img id="ystar7" src="yellowstar.png"onclick="appear7()">
+<img id="ystar8" src="yellowstar.png"onclick="appear8()">
+<img id="ystar9" src="yellowstar.png"onclick="appear9()">
+<img id="ystar10" src="yellowstar.png"onclick="appear10()">
+<img id="ystar11" src="yellowstar.png"onclick="appear11()">
+ -->
+
+
+
+<script type="text/javascript">
+document.getElementById("rat1").style.display="none";
+document.getElementById("rat2").style.display="none";
+document.getElementById("rat3").style.display="none";
+document.getElementById("rat4").style.display="none";
+document.getElementById("rat5").style.display="none";
+document.getElementById("rat6").style.display="none";
+document.getElementById("rat7").style.display="none";
+document.getElementById("rat8").style.display="none";
+document.getElementById("rat9").style.display="none";
+document.getElementById("rat10").style.display="none";
+document.getElementById("rat11").style.display="none";
+document.getElementById("rat12").style.display="none";
+document.getElementById("test").style.display="none";
+document.getElementById("test1").style.display="none";
+document.getElementById("test2").style.display="none";
+document.getElementById("test3").style.display="none";
+document.getElementById("test4").style.display="none";
+document.getElementById("test5").style.display="none";
+document.getElementById("test6").style.display="none";
+document.getElementById("test7").style.display="none";
+document.getElementById("test8").style.display="none";
+document.getElementById("test9").style.display="none";
+document.getElementById("test10").style.display="none";
+document.getElementById("test11").style.display="none";
+
+
+
+
+
+
+if(localStorage.getItem("a")==1){
+	document.getElementById("test").style.display="block";
+	document.getElementById("rat1").style.display="block";	
+}
+if(localStorage.getItem("b")==1){
+	document.getElementById("test1").style.display="block";
+	document.getElementById("rat2").style.display="block";
+}if(localStorage.getItem("c")==1){
+	document.getElementById("test2").style.display="block";
+	document.getElementById("rat3").style.display="block";
+}if(localStorage.getItem("d")==1){
+	document.getElementById("test3").style.display="block";
+	document.getElementById("rat4").style.display="block";
+}if(localStorage.getItem("e")==1){
+	document.getElementById("test4").style.display="block";
+	document.getElementById("rat5").style.display="block";
+}if(localStorage.getItem("f")==1){
+	document.getElementById("test5").style.display="block";
+	document.getElementById("rat6").style.display="block";
+}if(localStorage.getItem("g")==1){
+	document.getElementById("test6").style.display="block";
+	document.getElementById("rat7").style.display="block";
+}if(localStorage.getItem("h")==1){
+	document.getElementById("test7").style.display="block";
+	document.getElementById("rat8").style.display="block";
+}if(localStorage.getItem("i")==1){
+	document.getElementById("test8").style.display="block";
+	document.getElementById("rat9").style.display="block";
+}if(localStorage.getItem("j")==1){
+	document.getElementById("test9").style.display="block";
+	document.getElementById("rat10").style.display="block";
+}if(localStorage.getItem("k")==1){
+	document.getElementById("test10").style.display="block";
+	document.getElementById("rat11").style.display="block";
+}if(localStorage.getItem("l")==1){
+	document.getElementById("test11").style.display="block";
+	document.getElementById("rat12").style.display="block";
+}
+
+
+  document.getElementById("ystar").style.display="none";
+  document.getElementById("ystar1").style.display="none";
+  document.getElementById("ystar2").style.display="none";
+  document.getElementById("ystar3").style.display="none";
+  document.getElementById("ystar4").style.display="none";
+  document.getElementById("ystar5").style.display="none";
+  document.getElementById("ystar6").style.display="none";
+  document.getElementById("ystar7").style.display="none";
+  document.getElementById("ystar8").style.display="none";
+  document.getElementById("ystar9").style.display="none";
+  document.getElementById("ystar10").style.display="none";
+  document.getElementById("ystar11").style.display="none";
+function appear(){   
+
+    var e = document.getElementById("ystar");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+}
+function appear1(){   
+
+    var e = document.getElementById("ystar1");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear2(){   
+
+    var e = document.getElementById("ystar2");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear3(){   
+
+    var e = document.getElementById("ystar3");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear4(){   
+
+    var e = document.getElementById("ystar4");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear5(){   
+
+    var e = document.getElementById("ystar5");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear6(){   
+
+    var e = document.getElementById("ystar6");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear7(){   
+
+    var e = document.getElementById("ystar7");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear8(){   
+
+    var e = document.getElementById("ystar8");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear9(){   
+
+    var e = document.getElementById("ystar9");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear10(){   
+
+    var e = document.getElementById("ystar10");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 
+function appear11(){   
+
+    var e = document.getElementById("ystar11");
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block'; 
+
+} 	
+
+
+
+
+
+function toRatatouille(){
+	location.href="RatatouilleRecipe.html";
+}
+function toLasagna(){
+  location.href="LasagnaRecipe.html";
+}
+function toSteak(){
+  location.href="FiletRecipe.html";
+}
+function toGreekSalad(){
+  location.href="GreekSaladRecipe.html";
+}
+function toBeefChili(){
+  location.href="BeefChiliRecipe.html";
+}
+function toShrimpTacos(){
+  location.href="ShrimpTacosRecipe.html";
+}
+function toBBQpizza(){
+  location.href="BBQPizza.html";
+}
+function toRamen(){
+  location.href="RamenRecipe.html";
+}
+function toLambChops(){
+  location.href="LambChopsRecipe.html";
+}
+function toSalmon(){
+  location.href="SalmonRecipe.html";
+}
+function toRoll(){
+  location.href="CaliforniaRollRecipe.html";
+}
+function toHotWings(){
+  location.href="HotWingsRecipe.html";
+}
+
+
+</script>
+
+
+
+
+
 
 
 </body>

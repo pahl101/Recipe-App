@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="homeFav.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
 
 <style>
 
@@ -14,10 +14,10 @@
 	
 	<li><a class="" href="#home"><img id="search" src="search.png"></a></li>
 	<li><a class="" href="#home">Contact Us</a></li>
-	<li><a class="" href="#home">Logout</a></li>
+	<li><a class="login.html" href="#home">Logout</a></li>
 	<li><a href="">Profile</a></li>
-	<li><a href="">Favorites</a></li>
-	<li><a href="">Home</a></li>
+	<li><a href="favorites.html">Favorites</a></li>
+	<li><a href="home.html">Home</a></li>
 </ul>
 
 <table id="recipeTable">
@@ -91,22 +91,32 @@
   document.getElementById("ystar9").style.display="none";
   document.getElementById("ystar10").style.display="none";
   document.getElementById("ystar11").style.display="none";
+
 function appear(){   
 
     var e = document.getElementById("ystar");
        if(e.style.display == 'block')
           e.style.display = 'none';
        else
-          e.style.display = 'block'; 
+                   
+          localStorage.setItem("a", 1);
+        e.style.display = 'block';
+          
+          //localStorage.clear();
 
 }
 function appear1(){   
 
     var e = document.getElementById("ystar1");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
-          e.style.display = 'block'; 
+       }
+       else{
+          e.style.display = 'block';
+          localStorage.setItem("b", 1); 
+           //localStorage.clear();
+         }
+
 
 } 
 function appear2(){   
@@ -115,7 +125,10 @@ function appear2(){
        if(e.style.display == 'block')
           e.style.display = 'none';
        else
-          e.style.display = 'block'; 
+          e.style.display = 'block';
+            localStorage.setItem("c", 1); 
+           // localStorage.clear();
+
 
 } 
 function appear3(){   
@@ -125,6 +138,9 @@ function appear3(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+          localStorage.setItem("d", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear4(){   
@@ -133,7 +149,10 @@ function appear4(){
        if(e.style.display == 'block')
           e.style.display = 'none';
        else
-          e.style.display = 'block'; 
+          e.style.display = 'block';
+          localStorage.setItem("e", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear5(){   
@@ -143,6 +162,9 @@ function appear5(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+          localStorage.setItem("f", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear6(){   
@@ -152,6 +174,9 @@ function appear6(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+          localStorage.setItem("g", 1); 
+
+          // localStorage.clear();
 
 } 
 function appear7(){   
@@ -161,6 +186,9 @@ function appear7(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+          localStorage.setItem("h", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear8(){   
@@ -170,6 +198,9 @@ function appear8(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+          localStorage.setItem("i", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear9(){   
@@ -179,6 +210,9 @@ function appear9(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+                  localStorage.setItem("j", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear10(){   
@@ -188,6 +222,9 @@ function appear10(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+                  localStorage.setItem("k", 1); 
+          // localStorage.clear();
+
 
 } 
 function appear11(){   
@@ -197,6 +234,9 @@ function appear11(){
           e.style.display = 'none';
        else
           e.style.display = 'block'; 
+                  localStorage.setItem("l", 1); 
+          localStorage.clear();
+
 
 } 	
 

@@ -1,0 +1,278 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    top: -4px;
+   
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#search{
+	width: 20px;
+	height: 15px;
+}
+#left{	
+left:0px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+
+#mid{	
+left:600px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+#right{	
+left:1200px;
+top:56px;
+position:fixed;
+height:600px;
+width: 600px;
+opacity: 0.05;
+}
+#rat{
+	height: 200px;
+	width: 200px;
+
+}
+#rat:hover { 
+    opacity:0.5;
+}
+
+#recipeTable{
+	width: 100%;
+	font-size: 30px;
+}
+td{
+	width: 25%;
+}
+p{
+	text-align: left;
+	margin-left: 65px;
+	margin-top:4px;
+}
+#press1{
+	background-color: : black !important;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top:60px;
+	left:70px;
+}
+#star{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 230px;
+	
+}
+#star1{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 570px;
+	
+}
+#star2{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 900px;
+	
+}
+#star3{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 1190px;
+	
+}
+#star4{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 230px;
+	
+}
+#star5{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 570px;
+	
+}
+#star6{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 900px;
+	
+}
+#star7{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 1190px;
+	
+}
+#star8{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 240px;
+	
+}
+#star9{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 570px;
+	
+}
+#star10{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 920px;
+	
+}
+#star11{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 1190px;
+	
+}
+#ystar{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 230px;
+	
+}
+#ystar1{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 570px;
+	
+}
+#ystar2{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 900px;
+	
+}
+#ystar3{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:272px;
+	left: 1190px;
+	
+}
+#ystar4{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 230px;
+	
+}
+#ystar5{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 570px;
+	
+}
+#ystar6{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 900px;
+	
+}
+#ystar7{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:552px;
+	left: 1190px;
+	
+}
+#ystar8{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 240px;
+	
+}
+#ystar9{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 570px;
+	
+}
+#ystar10{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 920px;
+	
+}
+#ystar11{
+	height: 30px;
+	width:30px;
+	position: absolute;
+	top:862px;
+	left: 1190px;
+	
+}
+
