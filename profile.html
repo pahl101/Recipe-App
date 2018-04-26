@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+  <ul>
+    <li><a class="" href=""><img id="search" src="search.png"></a></li>
+    <li><a class="" href="">Contact Us</a></li>
+    <li><a class="" href="login.html">Logout</a></li>
+    <li><a href="">Profile</a></li>
+    <li><a href="favorites.html">Favorites</a></li>
+    <li><a href="home.html">Home</a></li>
+  </ul>
+
+<input name="username" id="username"   placeholder="Username" value="admin">
+	<input name="email" id="email"  placeholder="Email" value="admin@chapman.edu">
+	<input name="password" type="password" id="password"  placeholder="Password" value="admin">
+
+	<button name="registerbtn" id="update" onclick="update()">Update</button>
+
+	<h1 id="main">Profile</h1>
+
+	<img id="edit1" src="edit.png" onclick="changeName()">
+	<img id="edit2" src="edit.png" onclick="changePass()">
+	<img id="edit3" src="edit.png" onclick="changeEmail()">
+
+
+
+
+<script type="text/javascript">
+	
+function changeName(){
+
+document.getElementById("username").value="";
+
+
+}
+function changePass(){
+
+	document.getElementById("password").value="";
+
+
+}
+function changeEmail(){
+
+	document.getElementById("email").value="";
+
+
+}
+function update(){
+alert("Information Updated")
+
+}
+
+</script>
+
+
+
+  
+
+</body>
+
+
+
+
+
+</html>

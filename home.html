@@ -14,8 +14,8 @@
 	
 	<li><a class="" href="#home"><img id="search" src="search.png"></a></li>
 	<li><a class="" href="#home">Contact Us</a></li>
-	<li><a class="login.html" href="#home">Logout</a></li>
-	<li><a href="">Profile</a></li>
+	<li><a class="" href="login.html">Logout</a></li>
+	<li><a href="profile.html">Profile</a></li>
 	<li><a href="favorites.html">Favorites</a></li>
 	<li><a href="home.html">Home</a></li>
 </ul>
@@ -91,16 +91,92 @@
   document.getElementById("ystar9").style.display="none";
   document.getElementById("ystar10").style.display="none";
   document.getElementById("ystar11").style.display="none";
+  if(localStorage.getItem("a")==1){
+        document.getElementById("ystar").style.display="block";
+
+
+  }if(localStorage.getItem("a")==0){
+        document.getElementById("star").style.display="block";
+  }if(localStorage.getItem("b")==1){
+        document.getElementById("ystar1").style.display="block";
+
+
+  }if(localStorage.getItem("b")==0){
+        document.getElementById("star1").style.display="block";
+  }if(localStorage.getItem("c")==1){
+        document.getElementById("ystar2").style.display="block";
+
+
+  }if(localStorage.getItem("c")==0){
+        document.getElementById("star2").style.display="block";
+  }if(localStorage.getItem("d")==1){
+        document.getElementById("ystar3").style.display="block";
+
+
+  }if(localStorage.getItem("d")==0){
+        document.getElementById("star3").style.display="block";
+  }if(localStorage.getItem("e")==1){
+        document.getElementById("ystar4").style.display="block";
+
+
+  }if(localStorage.getItem("e")==0){
+        document.getElementById("star4").style.display="block";
+  }if(localStorage.getItem("f")==1){
+        document.getElementById("ystar5").style.display="block";
+
+
+  }if(localStorage.getItem("f")==0){
+        document.getElementById("star5").style.display="block";
+  }if(localStorage.getItem("g")==1){
+        document.getElementById("ystar6").style.display="block";
+
+
+  }if(localStorage.getItem("g")==0){
+        document.getElementById("star6").style.display="block";
+  }if(localStorage.getItem("h")==1){
+        document.getElementById("ystar7").style.display="block";
+
+
+  }if(localStorage.getItem("h")==0){
+        document.getElementById("star7").style.display="block";
+  }if(localStorage.getItem("i")==1){
+        document.getElementById("ystar8").style.display="block";
+
+
+  }if(localStorage.getItem("i")==0){
+        document.getElementById("star8").style.display="block";
+  }if(localStorage.getItem("j")==1){
+        document.getElementById("ystar9").style.display="block";
+
+
+  }if(localStorage.getItem("j")==0){
+        document.getElementById("star9").style.display="block";
+  }if(localStorage.getItem("k")==1){
+        document.getElementById("ystar10").style.display="block";
+
+
+  }if(localStorage.getItem("k")==0){
+        document.getElementById("star10").style.display="block";
+  }if(localStorage.getItem("l")==1){
+        document.getElementById("ystar11").style.display="block";
+
+
+  }if(localStorage.getItem("l")==0){
+        document.getElementById("star11").style.display="block";
+  }
 
 function appear(){   
 
     var e = document.getElementById("ystar");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
-                   
-          localStorage.setItem("a", 1);
+          localStorage.setItem("a", 0);
+       }
+       else{                   
+        localStorage.setItem("a", 1);
         e.style.display = 'block';
+
+      }
           
           //localStorage.clear();
 
@@ -110,6 +186,7 @@ function appear1(){
     var e = document.getElementById("ystar1");
        if(e.style.display == 'block'){
           e.style.display = 'none';
+          localStorage.setItem("b", 0);
        }
        else{
           e.style.display = 'block';
@@ -122,23 +199,32 @@ function appear1(){
 function appear2(){   
 
     var e = document.getElementById("ystar2");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+          localStorage.setItem("c", 0);
+        }
+
+       else{
           e.style.display = 'block';
             localStorage.setItem("c", 1); 
+          }
            // localStorage.clear();
+       
 
 
 } 
 function appear3(){   
 
     var e = document.getElementById("ystar3");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("d", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
           localStorage.setItem("d", 1); 
+        }
           // localStorage.clear();
 
 
@@ -146,11 +232,15 @@ function appear3(){
 function appear4(){   
 
     var e = document.getElementById("ystar4");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("e", 0);
+       }
+
+       else{
           e.style.display = 'block';
           localStorage.setItem("e", 1); 
+        }
           // localStorage.clear();
 
 
@@ -158,11 +248,15 @@ function appear4(){
 function appear5(){   
 
     var e = document.getElementById("ystar5");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("f", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
-          localStorage.setItem("f", 1); 
+          localStorage.setItem("f", 1);
+          } 
           // localStorage.clear();
 
 
@@ -170,11 +264,15 @@ function appear5(){
 function appear6(){   
 
     var e = document.getElementById("ystar6");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("g", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
           localStorage.setItem("g", 1); 
+        }
 
           // localStorage.clear();
 
@@ -182,11 +280,15 @@ function appear6(){
 function appear7(){   
 
     var e = document.getElementById("ystar7");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("h", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
           localStorage.setItem("h", 1); 
+        }
           // localStorage.clear();
 
 
@@ -194,23 +296,31 @@ function appear7(){
 function appear8(){   
 
     var e = document.getElementById("ystar8");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("i", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
           localStorage.setItem("i", 1); 
           // localStorage.clear();
+        }
 
 
 } 
 function appear9(){   
 
     var e = document.getElementById("ystar9");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("j", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
                   localStorage.setItem("j", 1); 
+                }
           // localStorage.clear();
 
 
@@ -218,11 +328,15 @@ function appear9(){
 function appear10(){   
 
     var e = document.getElementById("ystar10");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("k", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
                   localStorage.setItem("k", 1); 
+                }
           // localStorage.clear();
 
 
@@ -230,12 +344,15 @@ function appear10(){
 function appear11(){   
 
     var e = document.getElementById("ystar11");
-       if(e.style.display == 'block')
+       if(e.style.display == 'block'){
           e.style.display = 'none';
-       else
+                  localStorage.setItem("l", 0);
+       }
+
+       else{
           e.style.display = 'block'; 
                   localStorage.setItem("l", 1); 
-          localStorage.clear();
+                }
 
 
 } 	
