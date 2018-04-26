@@ -16,11 +16,11 @@
     <li><a href="home.html">Home</a></li>
   </ul>
 
-<input name="username" id="username"   placeholder="Username" value="admin">
-	<input name="email" id="email"  placeholder="Email" value="admin@chapman.edu">
-	<input name="password" type="password" id="password"  placeholder="Password" value="admin">
+<input id="username" placeholder="Username" value="admin">
+	<input id="email"  placeholder="Email" value="admin@chapman.edu">
+	<input type="password" id="password"  placeholder="Password" value="admin">
 
-	<button name="registerbtn" id="update" onclick="update()">Update</button>
+	<button id="update" onclick="update()">Update</button>
 
 	<h1 id="main">Profile</h1>
 
@@ -32,6 +32,10 @@
 
 
 <script type="text/javascript">
+
+document.getElementById("username").value=localStorage.getItem("usr");
+document.getElementById("password").value=localStorage.getItem("pass");
+document.getElementById("email").value=localStorage.getItem("em");
 	
 function changeName(){
 
@@ -53,6 +57,18 @@ function changeEmail(){
 }
 function update(){
 alert("Information Updated")
+
+ var x=document.getElementById("username").value;
+ var y=document.getElementById("password").value;
+ var z=document.getElementById("email").value;
+
+ localStorage.setItem("usr", x);
+ localStorage.setItem("pass", y);
+ localStorage.setItem("em", z);
+
+
+
+
 
 }
 

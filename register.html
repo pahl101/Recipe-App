@@ -34,15 +34,21 @@
 
 
 
-	<input name="username" id="username" type="" name="" placeholder="Username">
-	<input name="email" id="email" type="" name="" placeholder="Email">
-	<input name="password" type="password" id="password" type="" name="" placeholder="Password">
-	<input type="password" id="confirmpassword" type="" name="" placeholder="Confirm Password">
+	<input  id="username" placeholder="Username">
+	<input  id="email"  placeholder="Email">
+	<input " type="password" id="password"  placeholder="Password">	
 	<button name="registerbtn" id="registerbtn" onclick="register()">Register</button>
 
 <script type="text/javascript">
 
 function register(){
+ var x=document.getElementById("username").value;
+ var y=document.getElementById("password").value;
+ var z=document.getElementById("email").value;
+
+ localStorage.setItem("usr", x);
+ localStorage.setItem("pass", y);
+ localStorage.setItem("em", z);
 
 if (confirm("You are about to take a survey to help reccomend you recipes.")) {
         location.href="survey.html";
