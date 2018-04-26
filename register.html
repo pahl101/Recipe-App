@@ -1,197 +1,13 @@
-
-
-
-
 <!DOCTYPE html>
 
 <html>
 <head>
 	<title>Registration</title>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="logReg.css">
 
 
-<style type="text/css">
-	
-#leftborder{
-	height: 900px;
-	width: 150px;
-	background-color: blue;
-	position: fixed;
-	top:-20px;
-	left:-95px;
-	transform: rotate(12deg);
-
-}
-#rightborder{
-	height: 900px;
-	width: 200px;
-	background-color: blue;
-	position: fixed;
-	left:1260px;
-	top:-20px;
-	transform: rotate(12deg);
-
-}
-#topborder{
-	height: 300px;
-	width: 2000px;
-	background-color: green;
-	position: fixed;
-	left:-20px;
-	top:-190px;
-	transform: rotate(7deg);
 
 
-}
-#bottomborder{
-	height: 300px;
-	width: 2000px;
-	background-color: green;
-	position: fixed;
-	left:-50px;
-	top:620px;
-	transform: rotate(7deg);
-}
-#register{	
-	position: fixed;
-	left:518px;
-	top:90px;
-	font-size: 65px;
-}
-#left{	
-left:50px;
-position:fixed;
-transform: rotate(7deg);
-opacity: 0.25;
-}
-#mid{	
-top:70px;	
-left:590px;
-position:fixed;
-transform: rotate(7deg);
-opacity: 0.25;
-}
-#right{	
-top:130px;	
-left:1129px;
-position:fixed;
-transform: rotate(7deg);
-opacity: 0.25;
-}
-#username{	
-top:210px;	
-left:512px;
-position:fixed;
-height:35px;
-width:300px;
-border-radius: 25px;
-border-color: black;
-text-align: center;
-}
-#email{	
-top:262px;	
-left:512px;
-position:fixed;
-height:35px;
-width:300px;
-border-radius: 25px;
-border-color: black;
-text-align: center;
-}
-#password{	
-top:315px;	
-left:512px;
-position:fixed;
-height:35px;
-width:300px;
-border-radius: 25px;
-border-color: black;
-text-align: center;
-
-}
-#confirmpassword{	
-top:370px;	
-left:512px;
-position:fixed;
-height:35px;
-width:300px;
-border-radius: 25px;
-border-color: black;
-text-align: center;
-
-}
-#registerbtn{	
-top:430px;	
-left:612px;
-position:fixed;
-height:45px;
-width:100px;
-border-radius: 25px;
-border-color: black;
-}
-#loginbtn:hover{	
- background-color: #4CAF50; /* Green */
- color: white;
- box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-#navicon{
-
-height:45px;
-width:45px;
-top:10px;
-left:1300px;
-position:absolute;
-
-
-}
-#navicon1{
-
-height:45px;
-width:45px;
-top:10px;
-left:1150px;
-position:absolute;
-display:none;
-
-}
-#nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #ADD8E6;
-    position: absolute;
-    left:1200px;
-    top:0px;
-    height:662px;
-    border-style: solid;
-     border-width: 5px;
-    border-color: black;
-    
-   
-}
-
-   
-
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-    height: 100px;
-
-}
-
-li a:hover{
-    background-color: #555;
-    color: white;
-    border-style: solid;
-    border-width: 5px;
-    border-color: black;
-}
-
-</style>
 
 </head>
 <body>
@@ -214,76 +30,24 @@ li a:hover{
 
 
 
-	<input name="username" id="username" type="" name="" placeholder="Username">
-	<input name="email" id="email" type="" name="" placeholder="Email">
-	<input name="password" type="password" id="password" type="" name="" placeholder="Password">
-	<input type="password" id="confirmpassword" type="" name="" placeholder="Confirm Password">
-	<button name="registerbtn" id="registerbtn" onclick="window.location.href='survey.html'">Register</button>
-
-
-
-
-
-<img onclick="open_nav()" id="navicon" src="navicon.png">
-<img onclick="close_nav()" id="navicon1" src="navicon.png">
-
-
-
-
-
-<ul id="nav">
-  <li><a href="">Home</a></li>
-  <li><a href="">News</a></li>
-  <li><a href="">Contact</a></li>
-  <li><a href="">About</a></li>
-  <li><a href="">About</a></li>
-  <li><a href="">About</a></li>
-</ul>
-
-
+	<input  id="username" placeholder="Username">
+	<input  id="email"  placeholder="Email">
+	<input " type="password" id="password"  placeholder="Password">	
+	<button name="registerbtn" id="registerbtn" onclick="register()">Register</button>
 <script type="text/javascript">
-	document.getElementById("nav").style.display="none";
-
-function open_nav(){
-	
-		document.getElementById("nav").style.display="block";
-	
-		document.getElementById("navicon1").style.display="block";	
-	
-}
-function close_nav(){
-
-		document.getElementById("nav").style.display="none";
-		
-		document.getElementById("navicon1").style.display="none";
-
-}
-
 function register(){
-var url="https://docs.google.com/forms/d/1a0Yi9rTmVaPchJ3_eQS19gJbloazRPIXUfOfGzsUcDA/edit"
+ var x=document.getElementById("username").value;
+ var y=document.getElementById("password").value;
+ var z=document.getElementById("email").value;
+ localStorage.setItem("usr", x);
+ localStorage.setItem("pass", y);
+ localStorage.setItem("em", z);
 if (confirm("You are about to take a survey to help reccomend you recipes.")) {
-        var win=window.open(url);
-		win.focus()
+        location.href="survey.html";
     } else {
-        window.close();
+       
     }
-
-
 }
-function openInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}
-
-
-
 </script>
-
-
-
-
-
-
-
 </body>
 </html>
