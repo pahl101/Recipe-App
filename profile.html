@@ -32,6 +32,9 @@
 
 
 <script type="text/javascript">
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("email").disabled = true;
 
 document.getElementById("username").value=localStorage.getItem("usr");
 document.getElementById("password").value=localStorage.getItem("pass");
@@ -40,18 +43,26 @@ document.getElementById("email").value=localStorage.getItem("em");
 function changeName(){
 
 document.getElementById("username").value="";
+document.getElementById("username").disabled = false;
+
+
 
 
 }
 function changePass(){
 
 	document.getElementById("password").value="";
-
+	document.getElementById("password").disabled = false;
 
 }
 function changeEmail(){
 
 	document.getElementById("email").value="";
+	document.getElementById("email").disabled = false;
+
+
+
+
 
 
 }
