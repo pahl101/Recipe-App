@@ -64,12 +64,13 @@ li a:hover {
 #recipeImg{
 	height: 300px;
 	width: 80%;
-	    display: block;
+	display: block;
     margin-left: auto;
     margin-right: auto;
 
 
 }
+
 
 #recipeTitle{
 	text-align: center;
