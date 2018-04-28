@@ -136,7 +136,6 @@ li a:hover {
 #ingredients{
 	/*position: fixed;*/
 	margin-top:75px;
-	width:95%;
 	position: fixed;
 	word-wrap:break-word;
 }
